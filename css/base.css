@@ -1,0 +1,123 @@
+@media screen and (max-width: 767px) {
+  .navbar-fixed-top {
+    width:100%;
+  }
+  .navbar-fixed-top .navbar-collapse, 
+  .navbar-fixed-bottom .navbar-collapse {
+    max-height:none;
+  }
+  .navbar-nav {
+    margin:0;
+  }
+  .navbar-form {
+    margin:0;
+  }
+  /* General styles for all menus */
+  .jiffy-spmenu {
+    background: #2C2C2E;
+    position: fixed;
+    padding:0;
+    margin:0 !important;
+    overflow-x:hidden;
+    overflow-y:visible;
+    display:block;
+    visibility:visible;
+  }
+  .jiffy-spmenu-push .navbar-default .navbar-collapse, .jiffy-spmenu-push .navbar-default .navbar-form {border: none;}
+  .jiffy-spmenu .navbar-nav > li {padding-left: 20px;border-bottom: 1px solid #5f5f5f;height: 50px;}
+  .jiffy-spmenu .navbar-nav > li > a {color: #fff;padding: 15px 20px 10px 0;display: block;position: relative;font-weight: normal;}
+  .jiffy-spmenu .navbar-nav > li > a > i.fa-angle-right {font-size: 20px;position: absolute;right: 20px;top: 15px;}
+  .jiffy-spmenu .navbar-nav > li > a.fusion-logout {
+    height: 26px !important;
+    background-color: #444444;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    float: right;
+    padding: 2px 20px !important;
+    margin-right: 15px;
+    margin-top: 12px;
+  }
+  .navbar-fixed-top .jiffy-spmenu {
+    bottom:0;
+  }
+  .jiffy-spmenu .navbar-nav > li.divider {height: auto;}
+  /* Orientation-dependent styles for the content of the menu */
+  .jiffy-spmenu-vertical {
+    width: 260px;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  .jiffy-spmenu-horizontal {
+    width: 100%;
+    height: 150px;
+    left: 0;
+    z-index: 1000;
+    overflow: hidden;
+  }
+  .jiffy-spmenu-horizontal h3 {
+    height: 100%;
+    width: 20%;
+    float: left;
+  }
+  .jiffy-spmenu-horizontal a {
+    float: left;
+    width: 20%;
+    padding: 0.8em;
+    border-left: 1px solid #258ecd;
+  }
+  /* Vertical menu that slides from the left or right */
+  .jiffy-spmenu-left {
+    left: -260px;
+  }
+  .jiffy-spmenu-right {
+    right: 0;
+  }
+  .jiffy-spmenu-right,
+  .jiffy-spmenu-push-toleft .navbar-fixed-top .jiffy-spmenu-right.jiffy-spmenu-open {
+    right: -260px;
+  }
+  .jiffy-spmenu-left.jiffy-spmenu-open,
+  .jiffy-spmenu-push-toright .navbar-fixed-top .jiffy-spmenu-left.jiffy-spmenu-open {
+    left: 0px;
+  }
+  .jiffy-spmenu-right.jiffy-spmenu-open {
+    right: 0px !important;
+  }
+  /* Horizontal menu that slides from the top or bottom */
+  .jiffy-spmenu-top {
+    top: -150px;
+  }
+  .jiffy-spmenu-bottom {
+    bottom: -150px;
+  }
+  .jiffy-spmenu-top.jiffy-spmenu-open {
+    top: 0px;
+  }
+  .jiffy-spmenu-bottom.jiffy-spmenu-open {
+    bottom: 0px;
+  }
+  /* Push classes applied to the body */
+  .jiffy-spmenu-push {
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+  }
+  .jiffy-spmenu-push-toright,
+  .jiffy-spmenu-push-toright .navbar-fixed-top {
+    left: 260px;
+  }
+  .jiffy-spmenu-push-toleft,
+  .jiffy-spmenu-push-toleft .navbar-fixed-top {
+    left: -260px;
+  }
+  /* Transitions */
+  .jiffy-spmenu,
+  .jiffy-spmenu-push,
+  .navbar {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+}
